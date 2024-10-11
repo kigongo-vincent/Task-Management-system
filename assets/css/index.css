@@ -1,0 +1,197 @@
+
+:root{
+    --black-500: #282C34;
+    --black-900: #21252B;
+    --white-100: #ddd;
+    --white-50: #dddddd54;
+    --gradient: linear-gradient(-120deg, #5CCBDC, #8F5CE9, #E738F7);
+    --shadow: box-shadow(10px 10px 20px , rgba(0,0,0,.2));
+}
+
+.border-sm{
+    border: 1px solid var(--white-50);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.8;
+    transition: .2s;
+}
+p, input, label, a:link, a:visited, a:active, span, button, div, h5{
+    font-family: "Inter 18pt 18pt";
+    font-size: 13.5px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.mt-60{
+    margin-top: 60px;
+}
+
+.img{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.img img, .img-lg img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    height: 100%;
+}
+
+body{
+    background-color: var(--black-900);
+    color: var(--white-100);
+}
+
+.bg-black-500{
+    background-color: var(--black-500);
+    /* box-shadow: 10px 10px 20px #21252B; */
+    box-shadow: var(--shadow);
+}
+.bg-black-900{
+    background-color: var(--black-900);
+    /* box-shadow: 10px 10px 20px #21252B; */
+    box-shadow: var(--shadow);
+}
+
+.max-width{
+    width: max-content;
+}
+
+.rounded-edges{
+    border-radius: 100px;
+}
+
+h1, h2, h3, h4{
+    font-family: "poppins";
+    font-size: 20px;
+    /* font-weight: 900; */
+}
+
+.switch{
+    width: 40px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: var(--black-900);
+    position: relative;
+}
+
+.thumb{
+    height: 20px;
+    width: 20px;
+    background: var(--white-50);
+    border-radius: 100%;
+    position: absolute;
+    transition: .3s;
+}
+
+.on{
+    transition: .2s;
+    transform: translateX(20px);
+    background: var(--gradient);
+}
+
+
+
+textarea{
+    background: transparent;
+    outline: none;
+}
+
+button, input[type = submit], .modal-header, .modal-footer{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover, input[type = submit]:hover{
+    opacity: .5;
+}
+
+.linear-gradient{
+    background: var(--gradient);
+    color: var(--white-100);
+    box-shadow: var(--shadow);
+}
+
+.text-gradient{
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    /* width: max-content; */
+    -webkit-text-fill-color: transparent;
+}
+
+.fullwidth{
+    height: 100vh;
+    width: 100vw;
+}
+
+a:link, a:visited, a{
+    text-decoration: none;
+}
+
+.alert{
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    z-index: 4;
+    transform: translateX(100%);
+    transform-origin: top;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.2), -5px -5px 20px rgba(0,0,0,.1);
+}
+
+.show{
+    transform: translateX(0%);
+    transform-origin: top;
+
+}
+
+.img-lg{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+input[type=email], input[type=password], input[type=text], input[type=search], select, input[type=date]{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--white-50);
+    width: 350px;
+    outline: none;
+    color: var(--white-100);
+}
+
+option{
+    color: var(--black-900);
+    border: none;
+color: var(--white-50);
+    background-color: var(--black-900);
+}
+
+.text-white-100{
+    color: var(--white-100);
+}
+
+::placeholder{
+    color: var(--white-50);
+}
+
+@media (max-width: 768px){
+    input[type=email], input[type=password], input[type=text], input[type=search], select, input[type=date]{
+        width: 100%;
+    }
+    .modal-content{
+        width: 95vw;
+    }
+    .w-100-custom{
+        width: 95vw;
+    }
+}

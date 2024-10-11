@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.113" y1="1.116" x2="1.092" y2="-0.159" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5ccbdc"/>
+      <stop offset="0.536" stop-color="#8f5ce9"/>
+      <stop offset="1" stop-color="#e738f7"/>
+    </linearGradient>
+    <clipPath id="clip-auth_screen">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="auth_screen" data-name="auth screen" clip-path="url(#clip-auth_screen)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="1080" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="469" height="578" transform="matrix(0.788, -0.616, 0.616, 0.788, 1592.1, 456.638)" fill="#af35d8"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="469" height="578" transform="matrix(0.788, -0.616, 0.616, 0.788, -521.9, 108.638)" fill="#709ce4"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="469" height="578" transform="translate(477.495 691.795) rotate(53)" fill="#709ce4"/>
+  </g>
+</svg>
